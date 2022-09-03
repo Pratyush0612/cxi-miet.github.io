@@ -25,6 +25,15 @@ body {
   background-color:black;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col{
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,
@@ -419,6 +428,60 @@ section {
 ********portfolio CSS*****
 **************************/
 
+/* overlay start */
+#overlaya {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #fff;
+  width: 90%;
+  height:80%;
+  z-index: 10000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 40px black;
+}
+
+.popupclose{
+  position: absolute;
+  top:-5%;
+  right: -3%;
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  z-index: 10001;
+  text-shadow: 2px 2px 40px black;;
+}
+
+.popupcontent {
+  padding: 10px;
+  text-align: center;
+}
+.popupcontent p{
+  margin-top: 3rem;
+  color: black;
+}
+
+#button {
+  cursor: pointer;
+
+}
+/* overlay over */
+
 #portfolio .container-fluid,
 #portfolio .col-sm-3 {
   overflow: hidden;
@@ -474,7 +537,10 @@ section {
   margin-top: 0;
   color: #fff;
 }
-
+.overlay .folio-info span{
+  font-size: 3rem;
+  cursor: pointer;
+}
 .folio-overview a {
   font-size: 18px;
   color: rgba(255, 251, 251, 0.7);
@@ -553,46 +619,6 @@ section {
   left: 50%;
   color: rgba(255, 251, 251, 0.7);
   margin-left: -17px;
-}
-
-#overlaya {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background: #999;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  z-index: 100;
-}
-
-#popup {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  width: 500px;
-  height: 500px;
-  margin-left: -250px; /*Half the value of width to center div*/
-  margin-top: -250px; /*Half the value of height to center div*/
-  z-index: 200;
-}
-
-#popupclose {
-  float: right;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.popupcontent {
-  padding: 10px;
-}
-
-#button {
-  cursor: pointer;
-
 }
 
 
@@ -1151,3 +1177,4 @@ ul.address {
 }
 
 /*Presets*/
+
