@@ -513,6 +513,9 @@ section {
   width: 100%;
 }
 
+
+
+
 #portfolio .folio-item:hover .overlay {
   opacity: 0.8;
   bottom: 0;
@@ -551,16 +554,64 @@ section {
   color: rgba(255, 251, 251, 0.7);
   margin-left: -17px;
 }
+
+#overlaya {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px; /*Half the value of width to center div*/
+  margin-top: -250px; /*Half the value of height to center div*/
+  z-index: 200;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+}
+
+#button {
+  cursor: pointer;
+
+}
+
+
+
+
+
 /*************************
 ********Workshop*********
 *************************/
 .workshop{
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/twitter-bg.jpg);
   background-attachment: fixed;
+
 }
+
 .workshop-heading h1{
-  color: white;
+  color: rgb(214, 202, 232);
   padding: 50px 0;
 }
 .workshop .row{
@@ -570,8 +621,10 @@ section {
   margin: 15px;
 }
 .workshop h4{
-  color:white;
+  color:rgb(38, 193, 121);
 }
+
+
 /* .work-left{
   text-align: left; 
   border-bottom:1px solid #950740 ;
