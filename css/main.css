@@ -640,6 +640,31 @@ section {
   background-attachment: fixed;
 
 }
+#slider{
+  max-width: 100%;
+  }
+  #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {    
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+
+#slides .slide_2 {
+  background: #003459;
+}
+
 
 .workshop-heading h1{
   color: rgb(214, 202, 232);
@@ -653,6 +678,43 @@ section {
 }
 .workshop h4{
   color:rgb(254, 254, 254);
+}
+
+#controls {
+  margin: -180px 0 0 0;   
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+}
+#controls label:hover {
+  opacity: 1;
+}
+
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius:100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
 }
 
 
