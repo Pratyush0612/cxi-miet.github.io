@@ -577,9 +577,14 @@ section {
 
 .folio-image img {
   width: 100%;
+  
 }
-
-
+.folio-image #imgport{
+   height: 215px;
+  }
+.folio-image #imgprt{
+  height: 255px;
+}
 
 
 #portfolio .folio-item:hover .overlay {
