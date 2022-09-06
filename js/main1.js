@@ -34,4 +34,14 @@ model to an accuracy of 99.6</p>` ,
       popup.style.display = 'block';
       content.innerHTML = data[e]
     }
-  
+    //  Slider code
+    
+    var array =["item1","item2"]
+    var sliderMain = document.getElementById("slider-main");
+    var item = sliderMain.getElementsByClassName("item");
+      function next(){
+         sliderMain.append(item[0]);
+      }
+      function prev(){
+        sliderMain.prepend(item[item.length-1])
+      }
