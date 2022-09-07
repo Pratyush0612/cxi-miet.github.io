@@ -111,7 +111,7 @@ jQuery(function($) {
 			});
 		});
 	});
-      
+
 	// Close Portfolio Single View
 	$('#portfolio-single-wrap').on('click', '.close-folio-item',function(event) {
 		event.preventDefault();
@@ -124,7 +124,7 @@ jQuery(function($) {
 		$("#portfolio-single").slideUp(500);
 	});
 
-		// Contact form
+	// Contact form
 	var form = $('#main-contact-form');
 	form.submit(function(event){
 		event.preventDefault();
@@ -164,6 +164,4 @@ jQuery(function($) {
 	}
 	google.maps.event.addDomListener(window, 'load', initialize_map);
 	
-	
 });
-

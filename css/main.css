@@ -576,6 +576,7 @@ section {
 }
 
 .folio-image img {
+<<<<<<< HEAD
   width: 100%;
   
 }
@@ -585,6 +586,10 @@ section {
 .folio-image #imgprt{
   height: 259px;
 } */
+=======
+  width: 100%; 
+}
+>>>>>>> 9b84abe (up)
 
 
 #portfolio .folio-item:hover .overlay {
